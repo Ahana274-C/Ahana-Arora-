@@ -1,23 +1,31 @@
-#include <stdio.h>
+#include<stdio.h>
+int prime(int a) {
+    int i,count;
+    if(a==1 || a==0){
+        return printf("\n%d is nor a prime nor composite number",a);
+    }
+    for(i=2;i<a;i++){
+        if(a%i==0){
+            return printf("\n%d is not a prime number",a);
+            break;
+        }
+        else{
+            count++;
+        }
+    }
+    return printf("\n%d is a prime number",a);
+}
 int main() {
-    int num, original_num, remainder, sum 0:
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    original_num=num;
+    int n,i;
+    printf("How Many numbers in array = ");
+    scanf("%d",&n);
+    int a[n];
 
-    while (num > 0) {
-    remainder num % 10;
-    sum+=remainder*remainder*remainder;
-
-    num /=10;
+    for(i=0;i<n;i++){
+        printf("Enter Number %d = ",i+1);
+        scanf("%d",&a[i]);
     }
-
-    if (sum==original_num) {
-    printf("%d is an Armstrong number. \n", original_num);
-
-    } else {
-    printf("%d is not an Armstrong number.\n", original_num);
+    for(i=0;i<n;i++){
+        prime(a[i]);
     }
-
-    return 0;
 }
