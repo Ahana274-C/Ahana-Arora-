@@ -1,19 +1,14 @@
 #include <stdio.h>
 int main() {
-   int num, sum=0;
-   printf("Enter a number: "):
-   scanf("%d", &num);
-   for (int i=1;i<=num/2;i++) {
-      if (num % i==0) {
-         sum +=i;
-      }
-   }
+   int n = 5;
+   for (int i=1;i<=n;i++) {
+      int num i%2==1?1:0;
+      for (int j = 1; j <= 1; j++) {
+         printf("%d", num):
+         num=1-num;
+       }
+       printf("\n");
+    }
 
-   if (sum==num) {
-      printf("%d is a Perfect Number.\n", num);
-   } else {
-      printf("%d is not a Perfect Number.\n", num);
-   }
-   return 0;
-
+return 0;
 }
