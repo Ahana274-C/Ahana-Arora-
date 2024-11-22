@@ -1,23 +1,70 @@
 #include <stdio.h>
+#include <math.h>
 int main() {
-    int num, original_num, remainder, sum 0:
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    original_num=num;
+   int choice;
+   float num1, num2, result;
+   printf("Simple Calculator\n");
+   printf("Select an operation:\n");
+   printf("1. Addition\n");
+   printf("2. Subtraction\n");
+   printf("3. Multiplication\n");
+   printf("5. Logarithmic values\n");
+   printf("6. Square roots\n");
+   printf("Enter your choice (1-6): ^);
+   scanf("%d",&choice);
+   switch(choice) {
+     case 1:
+         printf("Enter two numbers: ");
+         scanf("%f %f", &num1, &num2);
+         result = num1+num2;
+         printf("Result: %f\n", result);
+         break;
+     case 2:
+         printf("Enter two numbers: ");
+         scanf(%f %f", &num1,&num2):
+         result numi-num2;
+         printf("Result: %f\n", result);
+         break:
+     case 3:
+         printf("Enter two numbers: ");
+         scanf("%f %f", &num1, &num2):
+         result = num1*num2:
+         printf("Result: %f\n", result):
+         break;
+     case 4:
+         printf("Enter two numbers: ");
+         scanf("%f %f", &num1, &num2);
+         if (num2 = 0) {
+            result num1/ num2:
+            printf("Result: %f\n", result);
+         } else {
+            printf("Error:division by zero is not allowed\n");
+         }
+         break;
+    case 5:
+         printf("Enter a number: ");
+         scanf(", &num1):
+         if (num1 > 0) {
+            result log10(num1);
+            printf("Logarithmic value (log base 10) of Sf is: %f\n", num1, result);
+         } else {
+            printf("Error: Logarithm is undefined for non-positive values.\n");
+         }
+         break:
 
-    while (num > 0) {
-    remainder num % 10;
-    sum+=remainder*remainder*remainder;
+    case 6:
+         printf("Enter a number: ");
+         scanf("%f", &num1):
+         if (num10) {
+            result sqrt(num1):
+            printf("Square root of if is: %f\n", num1, result);
+         } else {
+            printf("Error: Square root is undefined for negative numbers.\n");
+         }
+         break;
+     default:
+         printf("Invalid choice! Please enter a number between 1 and 6.\n");
 
-    num /=10;
-    }
-
-    if (sum==original_num) {
-    printf("%d is an Armstrong number. \n", original_num);
-
-    } else {
-    printf("%d is not an Armstrong number.\n", original_num);
-    }
-
-    return 0;
+  }
+  return 0;
 }
